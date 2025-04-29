@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SwipeRight
 
-## Getting Started
+SwipeRight is an upcoming app designed to help users maximize their credit card rewards by delivering monthly and quarterly promotion updates directly to their lock screens through a personalized widget experience.
 
-First, run the development server:
+This repository contains the pre-launch modular landing page for SwipeRight, built to capture early user interest and showcase the vision behind the app.
+
+## Project Overview
+
+SwipeRight enables users to:
+
+- Create an account and select the credit cards they own
+- Receive dynamic monthly or quarterly promotion updates based on their specific cards
+- Display personalized rewards widgets on their lock screens, with a roladex-style scrollable interface
+- Flip cards within the widget to view hidden perks, benefits, and features associated with their cards beyond points or cashback
+- Ask banking and rewards-related questions to an integrated chatbot (e.g., "What qualifies as dining for American Express?") and receive immediate, AI-powered answers
+
+The main app will provide a seamless, proactive way for users to stay informed about maximizing their financial rewards.
+
+## Future Roadmap
+
+**MVP 1:**
+- User account creation and card selection
+- Lock screen widget with roladex-style card browsing
+- Promotion and points update notifications
+- AI chatbot integration for card benefit FAQs
+
+**MVP 2:**
+- Smart location tracking to surface nearby card perks
+- Browser activity detection to provide real-time perk reminders
+- Enhanced personalization and proactive reward alerts
+
+## Landing Page Features (This Repository)
+
+- Fully modular React component structure
+- Smooth Framer Motion scroll-based animations
+- Responsive mobile-first design with TailwindCSS
+- Dynamic timeline visualization
+- FAQ and feature accordion sections with animated expand/collapse
+- Waitlist signup form integrated with Supabase, storing user signups in a live database
+- Survey form for capturing user interest, responses also stored in Supabase
+- Automated confirmation email system for beta waitlist signups using Resend
+- Markdown-powered progress updates section
+- Clean SEO meta setup and responsive favicon
+- Deployed through Vercel for fast, reliable global delivery
+
+## Tech Stack
+
+- Next.js 14 (App Router)
+- React 18
+- TypeScript
+- TailwindCSS
+- Framer Motion
+- Supabase
+- Vercel Deployment
+
+## Getting Started (Landing Page)
+
+To run SwipeRight Landing Page locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## License
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open-source for educational and portfolio demonstration purposes.
